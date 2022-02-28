@@ -1,25 +1,61 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
+import Home from './pages/home';
+import About from './pages/about';
+import Web from './pages/web';
+import Design from './pages/design';
+import Illustration from './pages/illustration';
+// This site has 3 pages, all of which are rendered
+// dynamically in the browser (not server rendered).
+//
+// Although the page does not ever refresh, notice how
+// React Router keeps the URL up to date as you navigate
+// through the site. This preserves the browser history,
+// making sure things like the back button and bookmarks
+// work properly.
 
-function App() {
+export default function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <div>
+        <ul>
+          <li>
+            <Link to="/Home">Home</Link>
+          </li>
+          <li>
+            <Link to="/About">About</Link>
+          </li>
+          <li>
+            <Link to="/Web">Web</Link>
+          </li>
+          <li>
+            <Link to="/Design">Design</Link>
+          </li>
+          <li>
+            <Link to="/Illustration">Illustration</Link>
+          </li>
+        </ul>
+
+        <hr />
+
+        <Switch>
+          <Route exact path="/home">
+            <Home />
+          </Route>
+          <Route exact path="/about">
+            <Home />
+          </Route>
+          <Route path="/web">
+            <Web />
+          </Route>
+          <Route path="/design">
+            <Design />
+          </Route>
+          <Route path="/illustration">
+            <Illustration />
+          </Route>
+        </Switch>
+      </div>
+    </Router>
   );
 }
-
-export default App;
