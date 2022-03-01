@@ -1,4 +1,5 @@
 import { Container } from 'semantic-ui-react';
+import About from '../components/about';
 import moth1 from '../images/illus/moth1.png';
 import moth2 from '../images/illus/moth2.png';
 import moth3 from '../images/illus/moth3.png';
@@ -18,6 +19,7 @@ function Home() {
             </h2>
           </div>
         </div>
+        <About />
       </Container>
     </div>
   );

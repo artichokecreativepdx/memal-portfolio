@@ -1,9 +1,8 @@
-import { Container } from 'semantic-ui-react';
 import selfie from '../images/selfie.png';
 function About() {
   return (
     <div>
-      <Container className="main">
+      <div className="main">
         <section id="about">
           <img src={selfie} alt="Logo" />
           <section className="about-me-text">
@@ -84,7 +83,7 @@ function About() {
             </section>
           </div>
         </div>
-      </Container>
+      </div>
     </div>
   );
 }

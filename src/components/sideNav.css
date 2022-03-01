@@ -1,3 +1,58 @@
-.menu-btn {
-  visibility: hidden;
+nav {
+  width: 100%;
+}
+.navBtnSticky {
+  background: #f3f5bc;
+  position: sticky;
+  width: 100%;
+}
+.ui.circular.button {
+  background: #93d2d2;
+  width: 100px;
+  height: 100px;
+}
+.webLink,
+.designLink,
+.illusLink,
+a {
+  list-style-type: none;
+}
+.menu {
+  display: none;
+}
+.ui.circular.button:focus {
+  background: #93d298;
+}
+.webLink {
+  background: #8bb28a;
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+}
+.designLink {
+  background: #c9cf57;
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+}
+.illusLink {
+  background: #46584b;
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+}
+
+@media (min-width: 30em) {
+  .menu {
+    width: 20%;
+    list-style-type: none;
+    display: block;
+  }
+  .navBtnSticky,
+  .ui.circular.button,
+  .webLink,
+  .designLink,
+  .illusLink {
+    display: none;
+  }
 }

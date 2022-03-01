@@ -19,7 +19,6 @@ export default function App() {
       <Header />
       <Switch>
         <Route path="/home" component={Home} exact={true} />
-        <Route path="/about" component={About} exact={true} />
         <Route path="/web" component={Web} exact={true} />
         <Route path="/design" component={Design} exact={true} />
         <Route path="/illustration" component={Illustration} exact={true} />
