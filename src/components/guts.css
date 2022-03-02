@@ -1,0 +1,56 @@
+/* * {
+  border: 1px solid red;
+} */
+.intro {
+  background: rgb(54, 59, 59);
+}
+.designer {
+  font-family: 'MuseoModerno', cursive;
+  font-size: 60px;
+  color: rgb(58, 130, 148);
+}
+.developer {
+  font-family: 'Press Start 2P', cursive;
+  font-size: 32px;
+  color: rgb(80, 219, 91);
+}
+.illustrator {
+  font-family: 'Barrio', cursive;
+  font-size: 36px;
+  color: rgb(221, 161, 211);
+}
+.mothBox {
+  position: relative;
+  padding: 10px;
+}
+.moths1 {
+  position: absolute;
+  top: -20px;
+  left: 200px;
+  z-index: 100;
+}
+.moths2 {
+  position: absolute;
+  top: 15px;
+  left: 85px;
+  z-index: 100;
+}
+.moths3 {
+  position: absolute;
+  top: -15px;
+  left: 180px;
+  z-index: 100;
+}
+@media (min-width: 30em) {
+  .designer {
+    font-size: 100px;
+  }
+  .developer {
+    font-size: 60px;
+    color: rgb(221, 161, 211);
+  }
+  .illustrator {
+    font-size: 80px;
+    color: rgb(49, 161, 156);
+  }
+}

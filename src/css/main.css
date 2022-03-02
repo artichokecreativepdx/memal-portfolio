@@ -3,3 +3,11 @@
   display: flex;
   flex-direction: row;
 }
+body {
+  font-family: 'Dosis', sans-serif;
+  color: rgb(50, 50, 61);
+}
+h1,
+h2 {
+  font-family: 'Raleway', sans-serif;
+}
