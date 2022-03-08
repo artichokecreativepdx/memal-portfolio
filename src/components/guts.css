@@ -2,22 +2,22 @@
   border: 1px solid red;
 } */
 .intro {
-  background: rgb(54, 59, 59);
+  background: var(--blu-blk);
 }
 .designer {
   font-family: 'MuseoModerno', cursive;
   font-size: 60px;
-  color: rgb(58, 130, 148);
+  color: var(--mid-blu);
 }
 .developer {
   font-family: 'Press Start 2P', cursive;
   font-size: 32px;
-  color: rgb(80, 219, 91);
+  color: var(--brite-grn);
 }
 .illustrator {
   font-family: 'Barrio', cursive;
   font-size: 36px;
-  color: rgb(221, 161, 211);
+  color: var(--pnk);
 }
 .mothBox {
   position: relative;
@@ -47,10 +47,8 @@
   }
   .developer {
     font-size: 60px;
-    color: rgb(221, 161, 211);
   }
   .illustrator {
     font-size: 80px;
-    color: rgb(49, 161, 156);
   }
 }

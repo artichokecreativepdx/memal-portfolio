@@ -1,10 +1,11 @@
 nav {
   width: 100%;
 }
-.navBtnSticky {
+.navSticky {
   background: #f3f5bc;
-  position: sticky;
-  width: 100%;
+}
+.navSticky li {
+  display: none;
 }
 .ui.circular.button {
   background: #93d2d2;
@@ -21,22 +22,25 @@ a {
   display: none;
 }
 .ui.circular.button:focus {
-  background: #93d298;
+  background: var(--grn);
 }
 .webLink {
-  background: #8bb28a;
+  background: var(--lt-grn);
   height: 10px;
   width: 10px;
   border-radius: 50%;
+
+  top: 2px;
+  right: 2px;
 }
 .designLink {
-  background: #c9cf57;
+  background: var(--dk-grn);
   height: 10px;
   width: 10px;
   border-radius: 50%;
 }
 .illusLink {
-  background: #46584b;
+  background: var(--dk-blu);
   height: 10px;
   width: 10px;
   border-radius: 50%;

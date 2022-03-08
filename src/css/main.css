@@ -1,11 +1,22 @@
-@import url('https://fonts.googleapis.com/css2?family=Dosis&family=Raleway&display=swap');
+:root {
+  --bc-dark: #32323d;
+  --lt-ylo: #f3f5bc;
+  --brite-grn: #50db5b;
+  --lt-grn: #8bb282;
+  --grn: #93d298;
+  --dk-grn: #c9cf57;
+  --blu-blk: #363b3b;
+  --dk-blu: #465846;
+  --mid-blu: #3a8294;
+  --pnk: #dda1d3;
+}
 .container {
   display: flex;
   flex-direction: row;
 }
 body {
   font-family: 'Dosis', sans-serif;
-  color: rgb(50, 50, 61);
+  color: var(--bc-dark);
 }
 h1,
 h2 {

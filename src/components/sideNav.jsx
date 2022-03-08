@@ -1,11 +1,13 @@
 import { Link } from 'react-router-dom';
 import { Button } from 'semantic-ui-react';
+import { useState } from 'react';
 import './sideNav.css';
 function Nav() {
+  const [open, setOpen] = useState(false);
   return (
     <div>
-      <div className="navBtnSticky">
-        <Button circular icon>
+      <div className="navSticky">
+        <Button circular icon onClick={() => setOpen(!open)}>
           <ul>
             <div className="webLink">
               <li>
