@@ -3,44 +3,53 @@ import { Button } from 'semantic-ui-react';
 import { useState } from 'react';
 import './sideNav.css';
 function Nav() {
-  const [open, setOpen] = useState(false);
+  const [toggleNav, setToggleNav] = useState(false);
+  const toggleHandler = () => {
+    setToggleNav(!toggleNav);
+  };
   return (
     <div>
-      <div className="navSticky">
-        <Button circular icon onClick={() => setOpen(!open)}>
-          <ul>
-            <div className="webLink">
-              <li>
-                <Link to="Web">Web</Link>
-              </li>
-            </div>
+      <nav>
+        <div className="navSticky">
+          <Button circular icon onClick={toggleHandler}>
+            {toggleNav ? '' : ''}
+          </Button>
+          <ul className={`menuNav ${toggleNav ? ' showMenu' : ''}`}>
             <div className="designLink">
-              <li>
-                <Link to="Design">Design</Link>
-              </li>
+              <Link to="Design">Design</Link>
             </div>
             <div className="illusLink">
-              <li>
-                <Link to="Illustration">Illustration</Link>
-              </li>
+              <Link to="Illustration">Illustration</Link>
+            </div>
+            <div className="webLink">
+              <Link to="Web">Web</Link>
             </div>
           </ul>
-        </Button>
-      </div>
-      <ul className="menu">
-        <li>
-          <Link to="/">Home</Link>
-        </li>
-        <li>
-          <Link to="Web">Web</Link>
-        </li>
-        <li>
-          <Link to="Design">Design</Link>
-        </li>
-        <li>
-          <Link to="Illustration">Illustration</Link>
-        </li>
-      </ul>
+        </div>
+        <div className="menu_desktop">
+          <div className="ui grid">
+            <div className="four wide column">
+              <div className="ui vertical fluid tabular menu">
+                <Link to="/" className="active item">
+                  Home
+                </Link>
+
+                <Link to="Web" className="item">
+                  Web
+                </Link>
+
+                <Link to="Design" className="item">
+                  Design
+                </Link>
+
+                <Link to="Illustration" className="item">
+                  Illustration
+                </Link>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
     </div>
   );
 }

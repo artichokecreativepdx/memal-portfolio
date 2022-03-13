@@ -12,35 +12,39 @@ import electric from '../images/illus/electric.jpg';
 import doll from '../images/illus/doll.jpg';
 import woods from '../images/illus/in_the_woods.jpg';
 import waitress from '../images/illus/waitress.jpg';
+import './illustration.css';
 
 function Illustration() {
   return (
     <div>
       <Container className="main">
-        <div className="ui medium rounded image">
-          <img src={atlas} className="img-fluid" alt="atlas moth" />
-        </div>
+        <div className="moth_illus">
+          <div className="section_title">MOTHS</div>
+          <div className="ui medium rounded image">
+            <img src={atlas} className="img-fluid" alt="atlas moth" />
+          </div>
 
-        <div className="ui medium rounded image">
-          <img src={emporor} className="img-fluid" alt="emporor moth" />
-        </div>
+          <div className="ui medium rounded image">
+            <img src={emporor} className="img-fluid" alt="emporor moth" />
+          </div>
 
-        <div className="ui medium rounded image">
-          <img src={silk} className="img-fluid" alt="silk moth" />
-        </div>
+          <div className="ui medium rounded image">
+            <img src={silk} className="img-fluid" alt="silk moth" />
+          </div>
 
-        <div className="ui medium rounded image">
-          <img src={latern} className="img-fluid" alt="lantern bug" />
-        </div>
+          <div className="ui medium rounded image">
+            <img src={latern} className="img-fluid" alt="lantern bug" />
+          </div>
 
-        <div className="ui medium rounded image">
-          <img src={lunas} className="img-fluid" alt="luna moth" />
-        </div>
-        <div className="ui medium rounded image">
-          <img src={sphinx} className="img-fluid" alt="sphinx moth" />
-        </div>
-        <div className="ui medium rounded image">
-          <img src={tiger} className="img-fluid" alt="tiger moth" />
+          <div className="ui medium rounded image">
+            <img src={lunas} className="img-fluid" alt="luna moth" />
+          </div>
+          <div className="ui medium rounded image">
+            <img src={sphinx} className="img-fluid" alt="sphinx moth" />
+          </div>
+          <div className="ui medium rounded image">
+            <img src={tiger} className="img-fluid" alt="tiger moth" />
+          </div>
         </div>
 
         <hr />

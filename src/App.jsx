@@ -18,13 +18,23 @@ export default function App() {
     <Router>
       <Container>
         <Header />
-        <Switch>
-          <Route path="/home" component={Home} exact={true} />
-          <Route path="/web" component={Web} exact={true} />
-          <Route path="/design" component={Design} exact={true} />
-          <Route path="/illustration" component={Illustration} exact={true} />
-          <Route exact path="/" render={() => <Redirect to="/home" />} />
-        </Switch>
+
+        <div class="twelve wide stretched column">
+          <div class="ui segment">
+            <Switch>
+              <Route path="/home" component={Home} exact={true} />
+              <Route path="/web" component={Web} exact={true} />
+              <Route path="/design" component={Design} exact={true} />
+              <Route
+                path="/illustration"
+                component={Illustration}
+                exact={true}
+              />
+              <Route exact path="/" render={() => <Redirect to="/home" />} />
+            </Switch>
+          </div>
+        </div>
+
         <Footer />
       </Container>
     </Router>
