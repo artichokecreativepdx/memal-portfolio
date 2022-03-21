@@ -1,7 +1,8 @@
 import { Link } from 'react-router-dom';
 import { Button } from 'semantic-ui-react';
 import { useState } from 'react';
-import './sideNav.css';
+import DesktopNav from './desktopNav';
+import './mobileNav.css';
 function Nav() {
   const [toggleNav, setToggleNav] = useState(false);
   const toggleHandler = () => {
@@ -26,8 +27,10 @@ function Nav() {
             </div>
           </ul>
         </div>
+
         <div className="menu_desktop">
-          <div className="ui grid">
+          <DesktopNav />
+          {/* <div className="ui grid">
             <div className="four wide column">
               <div className="ui vertical fluid tabular menu">
                 <Link to="/" className="active item">
@@ -47,7 +50,7 @@ function Nav() {
                 </Link>
               </div>
             </div>
-          </div>
+          </div> */}
         </div>
       </nav>
     </div>
