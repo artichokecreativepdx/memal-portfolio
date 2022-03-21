@@ -5,7 +5,7 @@ import {
   Route,
   Redirect,
 } from 'react-router-dom';
-import { Container } from 'semantic-ui-react';
+import { Grid, Segment } from 'semantic-ui-react';
 import Home from './pages/home';
 import Web from './pages/web';
 import Design from './pages/design';
@@ -16,11 +16,11 @@ import Header from './components/head';
 export default function App() {
   return (
     <Router>
-      <Container>
+      <Grid>
         <Header />
 
-        <div class="twelve wide stretched column">
-          <div class="ui segment">
+        <Grid.Column stretched width={12}>
+          <Segment>
             <Switch>
               <Route path="/home" component={Home} exact={true} />
               <Route path="/web" component={Web} exact={true} />
@@ -32,11 +32,11 @@ export default function App() {
               />
               <Route exact path="/" render={() => <Redirect to="/home" />} />
             </Switch>
-          </div>
-        </div>
+          </Segment>
+        </Grid.Column>
 
         <Footer />
-      </Container>
+      </Grid>
     </Router>
   );
 }

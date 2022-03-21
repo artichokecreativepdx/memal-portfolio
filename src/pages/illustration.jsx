@@ -1,4 +1,3 @@
-import { Container } from 'semantic-ui-react';
 import atlas from '../images/illus/atlasMoth.png';
 import emporor from '../images/illus/empororMoth.png';
 import silk from '../images/illus/giantSilk.png';
@@ -17,78 +16,71 @@ import './illustration.css';
 function Illustration() {
   return (
     <div>
-      <Container className="main">
-        <div className="moth_illus">
-          <div className="section_title">MOTHS</div>
-          <div className="ui medium rounded image">
-            <img src={atlas} className="img-fluid" alt="atlas moth" />
-          </div>
-
-          <div className="ui medium rounded image">
-            <img src={emporor} className="img-fluid" alt="emporor moth" />
-          </div>
-
-          <div className="ui medium rounded image">
-            <img src={silk} className="img-fluid" alt="silk moth" />
-          </div>
-
-          <div className="ui medium rounded image">
-            <img src={latern} className="img-fluid" alt="lantern bug" />
-          </div>
-
-          <div className="ui medium rounded image">
-            <img src={lunas} className="img-fluid" alt="luna moth" />
-          </div>
-          <div className="ui medium rounded image">
-            <img src={sphinx} className="img-fluid" alt="sphinx moth" />
-          </div>
-          <div className="ui medium rounded image">
-            <img src={tiger} className="img-fluid" alt="tiger moth" />
-          </div>
+      <div className="section_title_illustration">Illustration</div>
+      <div className="moth_illus">
+        <div className="ui medium rounded image">
+          <img src={atlas} className="img-fluid" alt="atlas moth" />
         </div>
-
-        <hr />
 
         <div className="ui medium rounded image">
-          <img
-            src={electric}
-            className="img-fluid"
-            width={300}
-            alt="electric painting"
-          />
-        </div>
-        <div className="ui medium rounded image">
-          <img
-            src={bears}
-            className="img-fluid"
-            width={300}
-            alt="bears painting"
-          />
-        </div>
-        <div className="ui medium rounded image">
-          <img
-            src={anthrax}
-            className="img-fluid"
-            width={300}
-            alt="anthrax painting"
-          />
+          <img src={emporor} className="img-fluid" alt="emporor moth" />
         </div>
 
-        <hr />
-        <img src={doll} className="img-fluid" alt="doll painting" width={300} />
+        <div className="ui medium rounded image">
+          <img src={silk} className="img-fluid" alt="silk moth" />
+        </div>
+
+        <div className="ui medium rounded image">
+          <img src={latern} className="img-fluid" alt="lantern bug" />
+        </div>
+
+        <div className="ui medium rounded image">
+          <img src={lunas} className="img-fluid" alt="luna moth" />
+        </div>
+        <div className="ui medium rounded image">
+          <img src={sphinx} className="img-fluid" alt="sphinx moth" />
+        </div>
+        <div className="ui medium rounded image">
+          <img src={tiger} className="img-fluid" alt="tiger moth" />
+        </div>
+      </div>
+
+      <hr />
+
+      <div className="ui medium rounded image">
         <img
-          src={woods}
+          src={electric}
           className="img-fluid"
-          alt="wood painting"
           width={300}
+          alt="electric painting"
         />
+      </div>
+      <div className="ui medium rounded image">
         <img
-          src={waitress}
+          src={bears}
           className="img-fluid"
-          alt="watress painting"
           width={300}
+          alt="bears painting"
         />
-      </Container>
+      </div>
+      <div className="ui medium rounded image">
+        <img
+          src={anthrax}
+          className="img-fluid"
+          width={300}
+          alt="anthrax painting"
+        />
+      </div>
+
+      <hr />
+      <img src={doll} className="img-fluid" alt="doll painting" width={300} />
+      <img src={woods} className="img-fluid" alt="wood painting" width={300} />
+      <img
+        src={waitress}
+        className="img-fluid"
+        alt="watress painting"
+        width={300}
+      />
     </div>
   );
 }

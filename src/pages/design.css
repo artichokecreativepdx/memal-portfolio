@@ -1,8 +1,8 @@
-.section_title_illustration {
-  font-family: 'Barrio', cursive;
+.section_title_design {
+  font-family: 'MuseoModerno', cursive;
   font-size: 3em;
   padding: 20px;
-  background: var(--pnk);
+  background: var(--mid-blu);
   display: flex;
   flex-direction: row;
   width: fit-content;

@@ -1,0 +1,12 @@
+.menu_mobile {
+  bottom: 4px;
+  position: fixed;
+  z-index: 100;
+  width: 100%;
+}
+
+@media (min-width: 30em) {
+  .menu_mobile {
+    display: none;
+  }
+}

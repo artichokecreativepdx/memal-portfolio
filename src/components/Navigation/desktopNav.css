@@ -1,0 +1,9 @@
+.menu_desktop {
+  display: none;
+}
+@media (min-width: 30em) {
+  .menu_desktop {
+    display: block;
+    z-index: 100;
+  }
+}
