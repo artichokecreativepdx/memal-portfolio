@@ -4,6 +4,10 @@
 .intro {
   background: var(--blu-blk);
 }
+.selfie {
+  position: fixed;
+  right: 0;
+}
 .designer {
   font-family: 'MuseoModerno', cursive;
   font-size: 60px;
@@ -46,7 +50,7 @@
     font-size: 100px;
   }
   .developer {
-    font-size: 60px;
+    font-size: 50px;
   }
   .illustrator {
     font-size: 80px;

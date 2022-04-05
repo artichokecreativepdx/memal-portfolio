@@ -1,0 +1,10 @@
+.section_title_web {
+  font-family: 'Press Start 2P', cursive;
+  background: var(--brite-grn);
+  font-size: 2em;
+  padding: 20px;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  line-height: 1.6;
+}

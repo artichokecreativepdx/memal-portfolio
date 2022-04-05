@@ -5,5 +5,5 @@
   background: var(--pnk);
   display: flex;
   flex-direction: row;
-  width: fit-content;
+  width: 100%;
 }

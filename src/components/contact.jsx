@@ -1,40 +1,45 @@
-import { Container } from 'semantic-ui-react';
-function Contact() {
+// import React, { useState } from 'react';
+import { Form, Button } from 'semantic-ui-react';
+
+const Contact = () => {
+  // const [status, setStatus] = useState('Submit');
+  // const handleSubmit = async (e) => {
+  //   e.preventDefault();
+  //   setStatus('Sending...');
+  //   const { name, email, message } = e.target.elements;
+  //   let details = {
+  //     name: name.value,
+  //     email: email.value,
+  //     message: message.value,
+  //   };
+  //   let response = await fetch('https://www.memaldesigns.com/', {
+  //     method: 'POST',
+  //     headers: {
+  //       'Content-Type': 'application/json;charset=utf-8',
+  //     },
+  //     body: JSON.stringify(details),
+  //   });
+  //   setStatus('Submit');
+  //   let result = await response.json();
+  //   alert(result.status);
+  // };
   return (
-    <div>
-      <Container>
-        <div id="contact">
-          <h1>Contact</h1>
-          <br />
-          <p>
-            If you would like to get in contact with me, please feel free to
-            leave me a message, I would love to hear from you.
-          </p>
-          <form className="ui form" method="post" action="">
-            <div className="field">
-              <label htmlFor="name">Name:</label>
-              <input type="text" id="name" name="name" required />
-            </div>
-            <div className="field">
-              <label htmlFor="email">Email:</label>
-              <input type="email" id="email" name="email" required />
-            </div>
-            <div className="field">
-              <label htmlFor="message">Message:</label>
-              <textarea
-                id="message"
-                name="message"
-                required
-                defaultValue={''}
-              />
-            </div>
-            <div className="field">
-              <button type="submit">Send</button>
-            </div>
-          </form>
-        </div>
-      </Container>
-    </div>
+    <Form post="megan@memaldesigns.com">
+      <div>
+        <label htmlFor="name">Name:</label>
+        <input type="text" id="name" required />
+      </div>
+      <div>
+        <label htmlFor="email">Email:</label>
+        <input type="email" id="email" required />
+      </div>
+      <div>
+        <label htmlFor="message">Message:</label>
+        <textarea id="message" required />
+      </div>
+      <Button type="submit"></Button>
+    </Form>
   );
-}
+};
+
 export default Contact;

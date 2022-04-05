@@ -9,16 +9,23 @@
   --dk-brn: #3b2313;
   --mid-blu: #3a8294;
   --pnk: #dda1d3;
+  --sixteen-gray: #c4c4c4;
+  --sixteen-brown: #703525;
+  --cindr-beige: #fceddf;
+  --stylish-grn: #95cfd2;
+  --planit-purple: #3d5fa4;
 }
 .container {
   display: flex;
   flex-direction: row;
 }
+
 body {
   font-family: 'Dosis', sans-serif;
   color: var(--bc-dark);
 }
 h1,
-h2 {
+h2,
+h3 {
   font-family: 'Raleway', sans-serif;
 }

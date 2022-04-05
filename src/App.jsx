@@ -5,7 +5,8 @@ import {
   Route,
   Redirect,
 } from 'react-router-dom';
-import { Grid, Segment } from 'semantic-ui-react';
+
+import { Grid } from 'semantic-ui-react';
 import Home from './pages/home';
 import Web from './pages/web';
 import Design from './pages/design';
@@ -18,24 +19,16 @@ export default function App() {
     <Router>
       <Grid>
         <Header />
-
-        <Grid.Column stretched width={12}>
-          <Segment>
-            <Switch>
-              <Route path="/home" component={Home} exact={true} />
-              <Route path="/web" component={Web} exact={true} />
-              <Route path="/design" component={Design} exact={true} />
-              <Route
-                path="/illustration"
-                component={Illustration}
-                exact={true}
-              />
-              <Route exact path="/" render={() => <Redirect to="/home" />} />
-            </Switch>
-          </Segment>
+        <Grid.Column stretched tablet={10} computer={12} mobile={16}>
+          <Switch>
+            <Route path="/home" component={Home} exact={true} />
+            <Route path="/web" component={Web} exact={true} />
+            <Route path="/design" component={Design} exact={true} />
+            <Route path="/illustration" component={Illustration} exact={true} />
+            <Route exact path="/" render={() => <Redirect to="/home" />} />
+          </Switch>
+          <Footer />
         </Grid.Column>
-
-        <Footer />
       </Grid>
     </Router>
   );
