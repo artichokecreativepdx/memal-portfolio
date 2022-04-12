@@ -1,0 +1,11 @@
+.footer {
+  padding-bottom: 70px;
+  background: var(--blu-blk);
+  color: var(--sixteen-gray);
+}
+.form {
+  padding: 10px;
+}
+.socialMedia a {
+  color: red;
+}

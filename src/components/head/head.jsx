@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
-import logo from '../images/my_logo.svg';
-import Nav from './navigation';
+import logo from './images/my_logo.svg';
+import Nav from '../Navigation/navigation';
 function Head() {
   return (
     <div>

@@ -1,11 +1,14 @@
-import About from '../components/about';
-import Guts from '../components/guts';
+import Guts from '../components/guts/guts';
+import Web from '../components/web/web';
+import Design from '../components/design/design';
 
 function Home() {
   return (
     <div className="main">
       <Guts />
-      <About />
+
+      <Web />
+      <Design />
     </div>
   );
 }

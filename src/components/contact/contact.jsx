@@ -24,20 +24,22 @@ const Contact = () => {
   //   alert(result.status);
   // };
   return (
-    <Form post="megan@memaldesigns.com">
-      <div>
-        <label htmlFor="name">Name:</label>
+    <Form className="form" inverted post="megan@memaldesigns.com">
+      <Form.Field>
+        <label>First Name</label>
         <input type="text" id="name" required />
-      </div>
-      <div>
-        <label htmlFor="email">Email:</label>
+      </Form.Field>
+      <Form.Field>
+        <label>Email</label>
         <input type="email" id="email" required />
-      </div>
-      <div>
-        <label htmlFor="message">Message:</label>
+      </Form.Field>
+      <Form.Field>
+        <label>Message</label>
         <textarea id="message" required />
-      </div>
-      <Button type="submit"></Button>
+      </Form.Field>
+      <Button type="submit" inverted>
+        Submit
+      </Button>
     </Form>
   );
 };

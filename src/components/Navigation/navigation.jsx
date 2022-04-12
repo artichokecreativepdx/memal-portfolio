@@ -1,5 +1,5 @@
-import DesktopNav from './Navigation/desktopNav';
-import MobileNav from './Navigation/mobileNav';
+import DesktopNav from './desktopNav';
+import MobileNav from './mobileNav';
 function Nav() {
   return (
     <div>

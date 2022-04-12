@@ -1,27 +1,27 @@
 import { Image, Grid, Segment } from 'semantic-ui-react';
-import Sixteen from '../images/Graphic Design/16Web.jpg';
-import SixteenRobts from '../images/Graphic Design/16logoFull.png';
-import SixteenBiz from '../images/Graphic Design/16Robotsbusiness.jpg';
-import SixteenR from '../images/Graphic Design/16logoR.png';
+import Sixteen from '../images/design/16Web.jpg';
+// import SixteenRobts from '../images/design/16logoFull.png';
+// import SixteenBiz from '../images/design/16Robotsbusiness.jpg';
+// import SixteenR from '../images/design/16logoR.png';
 
-import Cinder from '../images/Graphic Design/cinderWeb.jpg';
-import CinderLogo from '../images/Graphic Design/cinderLogo.png';
+import Cinder from '../images/design/cinderWeb.jpg';
+// import CinderLogo from '../images/design/cinderLogo.png';
 
-import StylishLogo from '../images/Graphic Design/sg_logo.png';
-import StylishSite from '../images/web/stylish_gentleman.jpg';
+// import StylishLogo from '../images/design/sg_logo.png';
+// import StylishSite from '../images/design/web/stylish_gentleman.jpg';
 
-import PlanitLogo from '../images/Graphic Design/planit.png';
-import PlanitSite from '../images/web/planit_home.png';
+// import PlanitLogo from '../images/design/planit.png';
+// import PlanitSite from '../images/design/web/planit_home.png';
 
-import LarkenLogo from '../images/Graphic Design/Larken_camp.png';
-import LarkenSite from '../images/Graphic Design/larkenWeb.jpg';
+// import LarkenLogo from '../images/design/Larken_camp.png';
+import LarkenSite from '../images/design/larkenWeb.jpg';
 import './design.css';
 function Design() {
   return (
-    <Grid stackable columns={2}>
-      <Segment className="section_title_design">Graphic Design</Segment>
+    <Grid stackable padded columns={2}>
+      <div className="section_title_design">Graphic Design</div>
 
-      <Grid.Column id="sxtn_gry">
+      {/* <Grid.Column id="sxtn_gry">
         <Segment className="ui card">
           <Image
             src={SixteenRobts}
@@ -30,9 +30,9 @@ function Design() {
             alt="16 robots long logo"
           />
         </Segment>
-      </Grid.Column>
+      </Grid.Column> */}
 
-      <Grid.Column>
+      {/* <Grid.Column>
         <Segment className="ui card">
           <Image
             src={SixteenBiz}
@@ -41,7 +41,7 @@ function Design() {
             alt="16 robots buisness cards"
           />
         </Segment>
-      </Grid.Column>
+      </Grid.Column> */}
 
       <Grid.Column>
         <Segment className="ui card sxtn_brn">
@@ -53,7 +53,7 @@ function Design() {
           />
         </Segment>
       </Grid.Column>
-      <Grid.Column>
+      {/* <Grid.Column>
         <Segment className="ui card">
           <Image
             src={SixteenR}
@@ -63,9 +63,9 @@ function Design() {
             alt="16 robots logo"
           />
         </Segment>
-      </Grid.Column>
+      </Grid.Column> */}
 
-      <Grid.Column>
+      {/* <Grid.Column>
         <Segment className="ui card plnit_purple">
           <Image
             src={PlanitLogo}
@@ -116,7 +116,7 @@ function Design() {
             alt="Cinder site"
           />
         </Segment>
-      </Grid.Column>
+      </Grid.Column> */}
       <Grid.Column>
         <Segment className="ui card">
           <Image
@@ -128,7 +128,7 @@ function Design() {
         </Segment>
       </Grid.Column>
 
-      <Grid.Column>
+      {/* <Grid.Column>
         <Segment className="ui card">
           <Image
             src={LarkenLogo}
@@ -137,7 +137,7 @@ function Design() {
             alt="Larken logo"
           />
         </Segment>
-      </Grid.Column>
+      </Grid.Column> */}
       <Grid.Column>
         <Segment className="ui card">
           <Image

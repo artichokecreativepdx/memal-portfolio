@@ -1,20 +1,20 @@
 import { Container, Segment, Image, Grid } from 'semantic-ui-react';
 import './imageSlider.css';
 
-import atlas from '../images/illus/atlas_crop.jpg';
-import emporor from '../images/illus/emporor_crop.jpg';
-import silk from '../images/illus/silk_crop.jpg';
-import lantern from '../images/illus/lantern_crop.jpg';
-import luna from '../images/illus/luna_crop.jpg';
-import sphinx from '../images/illus/sphinx_crop.jpg';
-import tiger from '../images/illus/tiger_crop.jpg';
-import anthrax from '../images/illus/anthrax_crop.jpg';
-import bears from '../images/illus/bears_crop.jpg';
-import electric from '../images/illus/electric_crop.jpg';
-import doll from '../images/illus/doll_crop.jpg';
-import woods from '../images/illus/woods_crop.jpg';
-import waitress from '../images/illus/waitress_crop.jpg';
-import birds from '../images/illus/bird_crop.jpg';
+import atlas from './illus/atlas_crop.jpg';
+import emporor from './illus/emporor_crop.jpg';
+import silk from './illus/silk_crop.jpg';
+import lantern from './illus/lantern_crop.jpg';
+import luna from './illus/luna_crop.jpg';
+import sphinx from './illus/sphinx_crop.jpg';
+import tiger from './illus/tiger_crop.jpg';
+import anthrax from './illus/anthrax_crop.jpg';
+import bears from './illus/bears_crop.jpg';
+import electric from './illus/electric_crop.jpg';
+import doll from './illus/doll_crop.jpg';
+import woods from './illus/woods_crop.jpg';
+import waitress from './illus/waitress_crop.jpg';
+import birds from './illus/bird_crop.jpg';
 
 function ImageSlider() {
   return (

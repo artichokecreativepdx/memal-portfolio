@@ -1,18 +1,19 @@
 import { Icon } from 'semantic-ui-react';
-import Contact from './contact';
+import Contact from '../contact/contact';
+import './footer.css';
 function Footer() {
   return (
-    <footer>
+    <footer className="footer">
       <Contact />
       <div className="socialMedia">
         <a href="https://github.com/artichokecreativepdx" target="blank">
-          <Icon circular name="github" />
+          <Icon circular size="big" name="github" />
         </a>
         <a href="https://www.instagram.com/dcartichoke/" target="blank">
-          <Icon circular name="instagram" />
+          <Icon circular size="big" name="instagram" />
         </a>
         <a href="https://www.linkedin.com/in/meganmaldonado/" target="blank">
-          <Icon circular name="linkedin" />
+          <Icon circular size="big" name="linkedin" />
         </a>
       </div>
 
