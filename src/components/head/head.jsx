@@ -1,9 +1,10 @@
 import { Link } from 'react-router-dom';
 import logo from './images/my_logo.svg';
 import Nav from '../Navigation/navigation';
+import './head.css';
 function Head() {
   return (
-    <div>
+    <div className="logo-nav">
       <header className="head">
         <Link to="/">
           <img src={logo} className="logo-image" alt="Logo" height={100} />

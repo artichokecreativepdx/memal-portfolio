@@ -17,9 +17,9 @@ import './web.css';
 
 function Web() {
   return (
-    <Grid stackable padded columns={2}>
+    <Grid stackable padded centered>
       <div className="section_title_web">Web Development</div>
-      <Card.Group centered>
+      <Card.Group>
         <Card>
           <Image
             src={planIt}
@@ -90,6 +90,8 @@ function Web() {
             </Image.Group>
           </Card.Description>
         </Card>
+      </Card.Group>
+      <Card.Group centered>
         <Card>
           <Image src={grendels} className="image-fluid" alt="grendels site" />
         </Card>
@@ -161,6 +163,8 @@ function Web() {
             </Card.Description>
           </Card.Content>
         </Card>
+      </Card.Group>
+      <Card.Group centered>
         <Card>
           <Image
             src={connection}
@@ -210,7 +214,8 @@ function Web() {
             </Card.Description>
           </Card.Content>
         </Card>
-
+      </Card.Group>
+      <Card.Group centered>
         <Card>
           <Image
             src={stylish}

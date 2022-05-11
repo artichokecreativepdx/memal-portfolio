@@ -29,13 +29,7 @@ export default class Desktop extends Component {
               active={activeItem === 'Web'}
               onClick={this.handleItemClick}
             />
-            {/* <Menu.Item
-              as={NavLink}
-              to="/design"
-              name="Design"
-              active={activeItem === 'Design'}
-              onClick={this.handleItemClick}
-            /> */}
+
             <Menu.Item
               as={NavLink}
               to="/illustration"

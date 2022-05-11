@@ -1,7 +1,8 @@
 .section_title_web {
   font-family: 'Press Start 2P', cursive;
   background: var(--brite-grn);
-  font-size: 2em;
+  font-size: 1.8em;
+  margin: 20px 0;
   padding: 20px;
   display: flex;
   flex-direction: row;

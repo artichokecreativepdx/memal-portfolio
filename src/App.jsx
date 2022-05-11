@@ -9,7 +9,7 @@ import {
 import { Grid } from 'semantic-ui-react';
 import Home from './pages/home';
 import About from './pages/about';
-// import Design from './pages/design';
+
 import Illustration from './pages/illustration';
 import Footer from './components/footer/footer';
 import Header from './components/head/head';
@@ -17,13 +17,12 @@ import Header from './components/head/head';
 export default function App() {
   return (
     <Router>
-      <Grid padded>
+      <Grid className="container">
         <Header />
         <Grid.Column stretched tablet={10} computer={12} mobile={16}>
           <Switch>
             <Route path="/home" component={Home} exact={true} />
             <Route path="/about" component={About} exact={true} />
-            {/* <Route path="/design" component={Design} exact={true} /> */}
             <Route path="/illustration" component={Illustration} exact={true} />
             <Route exact path="/" render={() => <Redirect to="/home" />} />
           </Switch>

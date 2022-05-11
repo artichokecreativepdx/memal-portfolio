@@ -12,7 +12,7 @@ export default class MobileNav extends Component {
 
     return (
       <div className="menu_mobile">
-        <Menu compact inverted fluid fixed="bottom" icon="labeled">
+        <Menu inverted fluid fixed="bottom" icon="labeled">
           <Menu.Item
             as={NavLink}
             to="/"
@@ -20,7 +20,7 @@ export default class MobileNav extends Component {
             active={activeItem === 'home'}
             onClick={this.handleItemClick}
           >
-            <Icon name="handshake" />
+            <Icon name="hand rock" />
             Home
           </Menu.Item>
           <Menu.Item
@@ -30,7 +30,7 @@ export default class MobileNav extends Component {
             active={activeItem === 'web'}
             onClick={this.handleItemClick}
           >
-            <Icon name="hand scissors" />
+            <Icon name="hand paper" />
             About
           </Menu.Item>
           {/* <Menu.Item
@@ -51,7 +51,7 @@ export default class MobileNav extends Component {
             active={activeItem === 'illustration'}
             onClick={this.handleItemClick}
           >
-            <Icon name="hand paper" />
+            <Icon name="hand scissors" />
             Illustration
           </Menu.Item>
         </Menu>
