@@ -1,5 +1,5 @@
 import { Container, Segment, Image, Grid } from 'semantic-ui-react';
-import ModalForImg from '../modal/modal';
+
 import './imageSlider.css';
 
 import atlas from './illus/atlas_crop.jpg';

@@ -4,7 +4,7 @@ import { Grid, Menu } from 'semantic-ui-react';
 import './desktopNav.css';
 
 export default class Desktop extends Component {
-  state = { activeItem: 'Home' };
+  state = {};
 
   handleItemClick = (e, { name }) => this.setState({ activeItem: name });
 

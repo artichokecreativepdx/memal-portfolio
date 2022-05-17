@@ -4,7 +4,10 @@
   z-index: 100;
   width: 100%;
 }
-
+.ui.fluid.labeled.icon.menu > .item {
+  min-width: 0;
+  padding: 20px 30px;
+}
 @media (min-width: 30em) {
   .menu_mobile {
     display: none;

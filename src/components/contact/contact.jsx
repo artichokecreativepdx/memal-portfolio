@@ -1,31 +1,35 @@
-import React, { useState } from 'react';
+import React, { useRef, useState } from 'react';
 import { Form } from 'semantic-ui-react';
+import emailjs from '@emailjs/browser';
 
-const Contact = () => {
+export const Contact = () => {
   const [status, setStatus] = useState('Submit');
-  const handleSubmit = async (e) => {
+  const form = useRef();
+  const sendEmail = (e) => {
     e.preventDefault();
     setStatus('Sending...');
-    const { name, email, message } = e.target.elements;
-    let details = {
-      name: name.value,
-      email: email.value,
-      message: message.value,
-    };
 
-    let response = await fetch('https://memaldesigns.com/contact', {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json;charset=utf-8',
-      },
-      body: JSON.stringify(details),
-    });
-    setStatus('Submit');
-    let result = await response.json();
-    alert(result.status);
+    emailjs
+      .sendForm(
+        'service_bxu1yhr',
+        'template_gxd84ck',
+        'form',
+        'f3RLYKLyl6omAjNRt'
+      )
+      .then(
+        function (response) {
+          //console.log("SUCCESS. status=%d, text=%s", response.status, response.text);
+          alert('Email sent successfully!');
+        },
+        function (error) {
+          //console.log("FAILED", error);
+          alert('FAILED!' + error);
+        }
+      );
   };
+
   return (
-    <Form onSubmit={handleSubmit}>
+    <Form ref={form} onSubmit={sendEmail}>
       <Form.Input fluid label="name" id="name" type="name" placeholder="Name" />
       <Form.Input
         fluid
