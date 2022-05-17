@@ -19,7 +19,7 @@ function Web() {
   return (
     <Grid stackable padded centered>
       <div className="section_title_web">Web Development</div>
-      <Card.Group>
+      <Card.Group centered>
         <Card>
           <Image
             src={planIt}
