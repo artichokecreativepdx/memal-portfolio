@@ -1,6 +1,4 @@
-.alice-carousel {
-  padding: 20px;
-}
-.alice-carousel__stage-item {
-  padding: 5px;
+.illusBox {
+  display: grid;
+  /* grid-template-columns: repeat(2, 1fr); */
 }

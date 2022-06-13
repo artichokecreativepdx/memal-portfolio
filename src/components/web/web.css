@@ -1,5 +1,6 @@
 .section_title_web {
-  font-family: 'Press Start 2P', cursive;
+  font-family: 'Press Start 2P', 'Trebuchet MS', 'Lucida Sans Unicode',
+    'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   background: var(--brite-grn);
   font-size: 1.8em;
   margin: 20px 0;
@@ -8,4 +9,22 @@
   flex-direction: row;
   width: 100%;
   line-height: 1.6;
+}
+.ui .card {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 2rem;
+}
+.ui.card > .image {
+  height: 600px;
+}
+
+.ui.card > .content {
+  padding: 10px;
+}
+@media (max-width: 700px) {
+  .ui .card {
+    display: block;
+  }
 }

@@ -1,4 +1,4 @@
-import { Image, Card, Grid } from 'semantic-ui-react';
+import { Image, Card, Segment } from 'semantic-ui-react';
 import planIt from '../images/web/planit_home.jpg';
 import stylish from '../images/web/stylish_gentleman.jpg';
 import grendels from '../images/web/grendels_screen.jpg';
@@ -17,85 +17,83 @@ import './web.css';
 
 function Web() {
   return (
-    <Grid stackable padded centered>
+    <>
       <div className="section_title_web">Web Development</div>
-      <Card.Group centered>
+      <Segment>
         <Card>
           <Image
             src={planIt}
             className="Image-fluid"
             alt="Planit Adventures website"
           />
+          <Card.Content>
+            <Card.Header>
+              <h2>PlanIt Adventures</h2>
+            </Card.Header>
+            <Card.Description>
+              <h3>Project Details</h3>
+              <hr />
+              <p>
+                Group project with the direction of Propel Projects creating MVP
+                App to be showcased at the end of 8 weeks. Worked with Project
+                manager, UX/UI, and Back-end persons to create fictional travel
+                App using Ionic framework and React/ Typescript. The project
+                concept was to create an app that suggests various travel
+                destination based on a series of questions presented to the
+                user.
+              </p>
+              <h3>Challenges</h3>
+              <hr />
+              <p>
+                Learning Git and version control to work in tandem with the
+                back-end developer.
+              </p>
+              <p>
+                Coordinating with UX/UI person to establish visual language and
+                user flow for the site.
+              </p>
+              <p>
+                Learning Ionic React/Typescript with no prior experience,
+                learned how to create components and make API calls
+              </p>
+              <hr />
+              <h3>Tech Stack</h3>
+
+              <Image.Group size="mini">
+                <Image
+                  src={ionic}
+                  className="Image-fluid"
+                  size="mini"
+                  alt="ionic logo"
+                />
+
+                <Image
+                  src={react}
+                  className="Image-fluid"
+                  size="mini"
+                  alt="react logo"
+                />
+
+                <Image
+                  src={typescript}
+                  className="Image-fluid"
+                  size="mini"
+                  alt="typescript logo"
+                />
+                <Image
+                  src={fastapi}
+                  className="Image-fluid"
+                  size="mini"
+                  alt="fastapi logo"
+                />
+              </Image.Group>
+            </Card.Description>
+          </Card.Content>
         </Card>
 
-        <Card>
-          <Card.Header>
-            <h2>PlanIt Adventures</h2>
-          </Card.Header>
-          <Card.Description>
-            <h3>Project Details</h3>
-            <hr />
-            <p>
-              Group project with the direction of Propel Projects creating MVP
-              App to be showcased at the end of 8 weeks. Worked with Project
-              manager, UX/UI, and Back-end persons to create fictional travel
-              App using Ionic framework and React/ Typescript. The project
-              concept was to create an app that suggests various travel
-              destination based on a series of questions presented to the user.
-            </p>
-            <h3>Challenges</h3>
-            <hr />
-            <p>
-              Learning Git and version control to work in tandem with the
-              back-end developer.
-            </p>
-            <p>
-              Coordinating with UX/UI person to establish visual language and
-              user flow for the site.
-            </p>
-            <p>
-              Learning Ionic React/Typescript with no prior experience, learned
-              how to create components and make API calls
-            </p>
-            <hr />
-            <h3>Tech Stack</h3>
-
-            <Image.Group size="mini">
-              <Image
-                src={ionic}
-                className="Image-fluid"
-                size="mini"
-                alt="ionic logo"
-              />
-
-              <Image
-                src={react}
-                className="Image-fluid"
-                size="mini"
-                alt="react logo"
-              />
-
-              <Image
-                src={typescript}
-                className="Image-fluid"
-                size="mini"
-                alt="typescript logo"
-              />
-              <Image
-                src={fastapi}
-                className="Image-fluid"
-                size="mini"
-                alt="fastapi logo"
-              />
-            </Image.Group>
-          </Card.Description>
-        </Card>
-      </Card.Group>
-      <Card.Group centered>
         <Card>
           <Image src={grendels} className="image-fluid" alt="grendels site" />
-        </Card>
-        <Card>
+
           <Card.Content>
             <Card.Header>
               <h2>Grendels Coffee Shop</h2>
@@ -163,16 +161,14 @@ function Web() {
             </Card.Description>
           </Card.Content>
         </Card>
-      </Card.Group>
-      <Card.Group centered>
+
         <Card>
           <Image
             src={connection}
             className="image-fluid"
             alt="connection pet rescue site"
           />
-        </Card>
-        <Card>
+
           <Card.Content>
             <Card.Header>
               <h2>Connection Pet Rescue</h2>
@@ -214,16 +210,14 @@ function Web() {
             </Card.Description>
           </Card.Content>
         </Card>
-      </Card.Group>
-      <Card.Group centered>
+
         <Card>
           <Image
             src={stylish}
             className="image-fluid"
             alt="stylish gentleman site"
           />
-        </Card>
-        <Card>
+
           <Card.Content>
             <Card.Header>
               <h2>Stylish Gentleman</h2>
@@ -268,8 +262,8 @@ function Web() {
             </Card.Description>
           </Card.Content>
         </Card>
-      </Card.Group>
-    </Grid>
+      </Segment>
+    </>
   );
 }
 export default Web;
