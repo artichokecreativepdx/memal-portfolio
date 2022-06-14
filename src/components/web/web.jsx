@@ -1,6 +1,6 @@
 import { Image, Card, Segment } from 'semantic-ui-react';
 import planIt from '../images/web/planit_home.jpg';
-import stylish from '../images/web/stylish_gentleman.jpg';
+
 import grendels from '../images/web/grendels_screen.jpg';
 import connection from '../images/web/cpr.jpg';
 import ionic from '../images/tech/ionic-icon.svg';
@@ -11,7 +11,7 @@ import affinity from '../images/tech/affinityDesigner.jpeg';
 import foundation from '../images/tech/foundation.svg';
 import htmlCluster from '../images/tech/htmlCluster.jpeg';
 import sass from '../images/tech/sass.png';
-import php from '../images/tech/php.png';
+
 import ajax from '../images/tech/ajax.jpeg';
 import './web.css';
 
@@ -205,58 +205,6 @@ function Web() {
                   className="Image-fluid"
                   size="mini"
                   alt="htmllogo"
-                />
-              </Image.Group>
-            </Card.Description>
-          </Card.Content>
-        </Card>
-
-        <Card>
-          <Image
-            src={stylish}
-            className="image-fluid"
-            alt="stylish gentleman site"
-          />
-
-          <Card.Content>
-            <Card.Header>
-              <h2>Stylish Gentleman</h2>
-            </Card.Header>
-            <Card.Description>
-              <h3>Project Details</h3>
-              <hr />
-              <p>
-                Stylish Gentleman is a fictional high end Mens apparel shop.{' '}
-              </p>
-              <h3>Challenges</h3>
-              <hr />
-              <p>
-                To conseptualize and execute landing page for a high end Mens
-                apparel storefront.
-              </p>
-              <p>
-                Create a brand and identity for the store that carried through
-                to te site.
-              </p>
-              <p>
-                create user stories and impliment UX/UI pricipals into design.
-              </p>
-              <br />
-              <h3>Tech Stack</h3>
-
-              <Image.Group size="mini">
-                <Image
-                  src={htmlCluster}
-                  className="Image-fluid"
-                  size="mini"
-                  alt="htmllogo"
-                />
-
-                <Image
-                  src={php}
-                  className="Image-fluid"
-                  size="mini"
-                  alt="php logo"
                 />
               </Image.Group>
             </Card.Description>

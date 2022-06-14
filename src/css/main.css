@@ -1,21 +1,7 @@
 :root {
-  --bc-dark: #32323d;
-  --lt-ylo: #f3f5bc;
-  --brite-grn: #50db5b;
-  --dk-grn: #8bb282;
-  --grn: #93d298;
-  --lt-grn: #c9cf57;
   --blu-blk: #363b3b;
-  --dk-brn: #3b2313;
-  --mid-blu: #3a8294;
-  --pnk: #dda1d3;
-  --sixteen-gray: #c4c4c4;
-  --sixteen-brown: #703525;
-  --cindr-beige: #fceddf;
-  --stylish-grn: #95cfd2;
-  --planit-purple: #3d5fa4;
-  --white: #eaf3fc;
-  --orange: #ec6923;
+
+  --white: #fff;
 }
 body {
   background: var(--blu-blk);

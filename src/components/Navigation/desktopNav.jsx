@@ -17,6 +17,7 @@ export default class Desktop extends Component {
           <Menu fluid vertical tabular>
             <Menu.Item
               as={NavLink}
+              exact
               to="/"
               name="Home"
               active={activeItem === 'Home'}

@@ -1,6 +1,6 @@
 import { NavLink } from 'react-router-dom';
 import React, { Component } from 'react';
-import { Icon, Menu } from 'semantic-ui-react';
+import { Menu } from 'semantic-ui-react';
 import './mobileNav.css';
 export default class MobileNav extends Component {
   state = {};
@@ -12,15 +12,15 @@ export default class MobileNav extends Component {
 
     return (
       <div className="menu_mobile">
-        <Menu inverted fluid fixed="bottom" icon="labeled">
+        <Menu fluid fixed="bottom">
           <Menu.Item
             as={NavLink}
+            exact
             to="/"
             name="home"
             active={activeItem === 'home'}
             onClick={this.handleItemClick}
           >
-            <Icon name="hand rock" />
             Home
           </Menu.Item>
           <Menu.Item
@@ -30,19 +30,8 @@ export default class MobileNav extends Component {
             active={activeItem === 'web'}
             onClick={this.handleItemClick}
           >
-            <Icon name="hand paper" />
             About
           </Menu.Item>
-          {/* <Menu.Item
-            as={NavLink}
-            to="./about"
-            name="about"
-            active={activeItem === 'design'}
-            onClick={this.handleItemClick}
-          >
-            <Icon name="hand rock" />
-            Design
-          </Menu.Item> */}
 
           <Menu.Item
             as={NavLink}
@@ -51,7 +40,6 @@ export default class MobileNav extends Component {
             active={activeItem === 'illustration'}
             onClick={this.handleItemClick}
           >
-            <Icon name="hand scissors" />
             Illustration
           </Menu.Item>
         </Menu>

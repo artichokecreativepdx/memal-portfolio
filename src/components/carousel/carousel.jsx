@@ -34,7 +34,7 @@ const Carousel = ({ children }) => {
         <div className="indicators">
           <Button
             circular
-            icon="arrow left "
+            icon="arrow left"
             onClick={() => {
               updateIndex(activeIndex - 1);
             }}
@@ -42,7 +42,7 @@ const Carousel = ({ children }) => {
 
           <Button
             circular
-            icon="arrow right "
+            icon="arrow right"
             onClick={() => {
               updateIndex(activeIndex + 1);
             }}

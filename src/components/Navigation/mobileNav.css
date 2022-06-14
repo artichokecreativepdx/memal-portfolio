@@ -1,9 +1,11 @@
-.menu_mobile {
+.ui.fixed.menu {
   bottom: 4px;
-  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   z-index: 100;
-  width: 100%;
 }
+
 .ui.fluid.labeled.icon.menu > .item {
   min-width: 0;
   padding: 20px 30px;
