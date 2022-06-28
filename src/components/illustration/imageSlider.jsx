@@ -1,4 +1,3 @@
-import { Segment, Image } from 'semantic-ui-react';
 import Carousel, { CarouselItem } from '../carousel/carousel';
 import './imageSlider.css';
 
@@ -19,57 +18,57 @@ import birds from './illus/bird_crop.jpg';
 
 function ImageSlider() {
   return (
-    <Segment className="illusBox">
+    <section className="illusBox">
       <h2>Digital Illustrations</h2>
       <Carousel>
         <CarouselItem>
-          <Image src={lantern} alt="lantern bug" />
+          <img src={lantern} alt="lantern bug" />
         </CarouselItem>
         <CarouselItem>
-          <Image src={luna} alt="luna moth" />
+          <img src={luna} alt="luna moth" />
         </CarouselItem>
         <CarouselItem>
-          <Image src={sphinx} alt="sphinx moth" />
+          <img src={sphinx} alt="sphinx moth" />
         </CarouselItem>
         <CarouselItem>
-          <Image src={tiger} alt="tiger moth" />
+          <img src={tiger} alt="tiger moth" />
         </CarouselItem>
         <CarouselItem>
-          <Image src={silk} alt="silk moth" />
+          <img src={silk} alt="silk moth" />
         </CarouselItem>
         <CarouselItem>
-          <Image src={atlas} alt="atlas moth" />
+          <img src={atlas} alt="atlas moth" />
         </CarouselItem>
         <CarouselItem>
-          <Image src={emporor} alt="emporor moth" />
+          <img src={emporor} alt="emporor moth" />
         </CarouselItem>
       </Carousel>
 
       <h2>Acrylic and Oil</h2>
       <Carousel>
         <CarouselItem>
-          <Image src={anthrax} alt="anthrax painting" />
+          <img src={anthrax} alt="anthrax painting" />
         </CarouselItem>
         <CarouselItem>
-          <Image src={birds} alt="cicada painting" />
+          <img src={birds} alt="cicada painting" />
         </CarouselItem>
         <CarouselItem>
-          <Image src={bears} alt="bear painting" />
+          <img src={bears} alt="bear painting" />
         </CarouselItem>
         <CarouselItem>
-          <Image src={electric} alt="electric painting" />
+          <img src={electric} alt="electric painting" />
         </CarouselItem>
         <CarouselItem>
-          <Image src={doll} alt="doll painting" />
+          <img src={doll} alt="doll painting" />
         </CarouselItem>
         <CarouselItem>
-          <Image src={woods} alt="woods painting" />
+          <img src={woods} alt="woods painting" />
         </CarouselItem>
         <CarouselItem>
-          <Image src={waitress} alt="waitress painting" />
+          <img src={waitress} alt="waitress painting" />
         </CarouselItem>
       </Carousel>
-    </Segment>
+    </section>
   );
 }
 export default ImageSlider;

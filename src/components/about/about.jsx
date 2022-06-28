@@ -1,4 +1,3 @@
-import { Image, Segment, Button, List, Divider } from 'semantic-ui-react';
 import './about.css';
 import Selfie from '../images/selfie.png';
 import Resume from '../resume/MeganMaldonadoResume2022.pdf';
@@ -17,9 +16,9 @@ import css from '../images/tech/css.png';
 function AboutMe() {
   return (
     <div>
-      <Segment>
-        <Image src={Selfie} size="small" rounded centered />
-        <Divider />
+      <section>
+        <img src={Selfie} width="300" alt="selfie" />
+
         <p>
           Junior Web Developer with experience in HTML, Javascript, CSS, React,
           Wordpress Theming, and Typescript. In addition to coding, I have a
@@ -29,96 +28,54 @@ function AboutMe() {
           spare time, I enjoy kyaking, digital painting and watching horror
           movies.
         </p>
-      </Segment>
-      <Segment>
+      </section>
+      <section>
         <h3>Skills</h3>
-        <List>
-          <List.Item> Web Development/ Design</List.Item>
-          <List.Item>Graphic design</List.Item>
-          <List.Item>UX/UI design</List.Item>
-          <List.Item>Computer &amp; hand Illustration</List.Item>
-          <List.Item>Logo &amp; identity design</List.Item>
-          <List.Item>Usability testing</List.Item>
-          <List.Item> Photography</List.Item>
-          <List.Item> Writing for SEO</List.Item>
-          <List.Item>Video editing</List.Item>
-        </List>
+        <ul>
+          <li> Web Development/ Design</li>
+          <li>Graphic design</li>
+          <li>UX/UI design</li>
+          <li>Computer &amp; hand Illustration</li>
+          <li>Logo &amp; identity design</li>
+          <li>Usability testing</li>
+          <li> Photography</li>
+          <li> Writing for SEO</li>
+          <li>Video editing</li>
+        </ul>
 
         <h3>languages, Libraries, Frameworks, APIS AND Platforms</h3>
-        <Divider />
-        <Image.Group size="mini">
-          <Image src={js} className="Image-fluid" size="mini" alt="js logo" />
 
-          <Image
-            src={typescript}
-            className="Image-fluid"
-            size="mini"
-            alt="typescript logo"
-          />
+        <img src={js} width="25" alt="js logo" />
 
-          <Image src={php} className="Image-fluid" size="mini" alt="php logo" />
-          <Image
-            src={react}
-            className="Image-fluid"
-            size="mini"
-            alt="react logo"
-          />
+        <img src={typescript} width="25" alt="typescript logo" />
 
-          <Image
-            src={ionic}
-            className="Image-fluid"
-            size="mini"
-            alt="ionic logo"
-          />
+        <img src={php} width="25" alt="php logo" />
+        <img src={react} width="25" alt="react logo" />
 
-          <Image
-            src={affinity}
-            className="Image-fluid"
-            size="mini"
-            alt="affinity logo"
-          />
+        <img src={ionic} width="25" alt="ionic logo" />
 
-          <Image
-            src={foundation}
-            className="Image-fluid"
-            size="mini"
-            alt="foundation logo"
-          />
-          <Image
-            src={fastapi}
-            className="Image-fluid"
-            size="mini"
-            alt="fast api logo"
-          />
-          <Image
-            src={sass}
-            className="Image-fluid"
-            size="mini"
-            alt="sass logo"
-          />
-          <Image
-            src={ajax}
-            className="Image-fluid"
-            size="mini"
-            alt="ajax logo"
-          />
-          <Image
-            src={html}
-            className="Image-fluid"
-            size="mini"
-            alt="html logo"
-          />
-          <Image src={css} className="Image-fluid" size="mini" alt="css logo" />
-        </Image.Group>
-      </Segment>
-      <Segment>
+        <img
+          src={affinity}
+          className="Image-fluid"
+          width="25"
+          alt="affinity logo"
+        />
+
+        <img src={foundation} width="25" alt="foundation logo" />
+        <img src={fastapi} width="25" alt="fast api logo" />
+        <img src={sass} width="25" alt="sass logo" />
+        <img src={ajax} width="25" alt="ajax logo" />
+        <img src={html} width="25" alt="html logo" />
+        <img src={css} width="25" alt="css logo" />
+      </section>
+      <section>
         I am available for hire
-        <Button>
+        <button>
           <a href={Resume} target="_blank" rel="noreferrer">
             Resume
           </a>
-        </Button>
-      </Segment>
+        </button>
+      </section>
     </div>
   );
 }

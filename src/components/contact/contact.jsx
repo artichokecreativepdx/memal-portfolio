@@ -1,5 +1,5 @@
 import React, { useRef, useState } from 'react';
-import { Form, Segment } from 'semantic-ui-react';
+
 import emailjs from '@emailjs/browser';
 
 export const Contact = () => {
@@ -29,33 +29,34 @@ export const Contact = () => {
   };
 
   return (
-    <Segment>
-      <Form ref={form} onSubmit={sendEmail}>
-        <Form.Input
-          fluid
+    <section>
+      <form ref={form} onSubmit={sendEmail}>
+        <input
           label="name"
           id="name"
+          className="u-full-width"
           type="name"
           placeholder="Name"
         />
-        <Form.Input
-          fluid
+        <input
           label="email"
           id="email"
+          className="u-full-width"
           type="email"
           placeholder="Email"
         />
 
-        <Form.TextArea
+        <textarea
           label="message"
           id="message"
+          className="u-full-width"
           type="message"
           placeholder="Connect with me"
         />
 
-        <Form.Button type="submit">{status}</Form.Button>
-      </Form>
-    </Segment>
+        <button type="submit">{status}</button>
+      </form>
+    </section>
   );
 };
 

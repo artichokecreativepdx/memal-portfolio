@@ -1,5 +1,3 @@
-import { Image, Segment } from 'semantic-ui-react';
-
 import SixteenRobts from '../images/design/16logoFull.png';
 import SixteenBiz from '../images/design/16Robotsbusiness.jpg';
 
@@ -17,74 +15,49 @@ import LarkenSite from '../images/design/larkenWeb.jpg';
 import './design.css';
 function Design() {
   return (
-    <Segment>
+    <section>
       <div className="section_title_design">Graphic Design</div>
 
-      <Image
+      <img
         src={SixteenRobts}
-        centered
         className="Image-fluid"
         alt="16 robots long logo"
       />
 
-      <Image
+      <img
         src={SixteenBiz}
-        centered
         className="Image-fluid"
         alt="16 robots buisness cards"
       />
 
-      <Image
+      <img
         src={PlanitLogo}
-        centered
         className="image-fluid"
         alt="Planit adventures logo"
       />
 
-      <Image
+      <img
         src={PlanitSite}
-        centered
         className="Image-fluid"
         alt="Planit adventures website"
       />
 
-      <Image
-        src={StylishLogo}
-        centered
-        className="stylsh_grn"
-        alt="Stylish gent logo"
-      />
+      <img src={StylishLogo} className="stylsh_grn" alt="Stylish gent logo" />
 
-      <Image
+      <img
         src={StylishSite}
-        centered
         className="Image-fluid"
         alt="Stylish gent website"
       />
 
-      <Image
-        src={CinderLogo}
-        centered
-        className="Image-fluid"
-        alt="Cinder site"
-      />
+      <img src={CinderLogo} className="Image-fluid" alt="Cinder site" />
 
-      <Image src={Cinder} centered className="Image-fluid" alt="Cinder logo" />
+      <img src={Cinder} className="Image-fluid" alt="Cinder logo" />
 
-      <Image
-        src={LarkenLogo}
-        centered
-        className="Image-fluid"
-        alt="Larken logo"
-      />
+      <img src={LarkenLogo} className="Image-fluid" alt="Larken logo" />
 
-      <Image
-        src={LarkenSite}
-        centered
-        className="Image-fluid"
-        alt="Larken logo"
-      />
-    </Segment>
+      <img src={LarkenSite} className="Image-fluid" alt="Larken logo" />
+    </section>
   );
 }
 export default Design;

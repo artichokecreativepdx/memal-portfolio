@@ -1,24 +1,17 @@
-import { Route, Switch, Redirect } from 'react-router-dom';
+import { Route, Switch } from 'react-router-dom';
 import Home from './pages/home';
 import About from './pages/about';
-
+import Web from './pages/web';
 import Illustration from './pages/illustration';
-import Footer from './components/footer/footer';
-import Header from './components/head/head';
 
-export const Routes = () => {
+function Routes() {
   return (
-    <div>
-      <Header />
-      <Switch>
-        <Route exact path="/Home" component={Home} />
-        <Route exact path="/">
-          <Redirect to="/Home" />
-        </Route>
-        <Route path="/about" component={About} exact={true} />
-        <Route path="/illustration" component={Illustration} exact={true} />
-      </Switch>
-      <Footer />
-    </div>
+    <Switch>
+      <Route path="/" component={Home} exact />
+      <Route path="/about" component={About} />
+      <Route path="/web" component={Web} />
+      <Route path="/illustration" component={Illustration} />
+    </Switch>
   );
-};
+}
+export default Routes;

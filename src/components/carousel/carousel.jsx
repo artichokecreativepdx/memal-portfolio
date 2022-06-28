@@ -2,7 +2,6 @@ import React from 'react';
 import { useState } from 'react';
 import { useSwipeable } from 'react-swipeable';
 import './carousel.css';
-import { Button, Segment } from 'semantic-ui-react';
 
 export const CarouselItem = ({ children, width }) => {
   return (
@@ -29,24 +28,24 @@ const Carousel = ({ children }) => {
   });
 
   return (
-    <Segment className="carousel-segment">
+    <section className="carousel-segment">
       <div className="carousel" {...handlers}>
         <div className="indicators">
-          <Button
-            circular
-            icon="arrow left"
+          <button
             onClick={() => {
               updateIndex(activeIndex - 1);
             }}
-          ></Button>
+          >
+            <ion-icon name="arrow-back-circle-outline"></ion-icon>
+          </button>
 
-          <Button
-            circular
-            icon="arrow right"
+          <button
             onClick={() => {
               updateIndex(activeIndex + 1);
             }}
-          ></Button>
+          >
+            <ion-icon name="arrow-forward-circle-outline"></ion-icon>
+          </button>
         </div>
         <div
           className="inner"
@@ -57,7 +56,7 @@ const Carousel = ({ children }) => {
           })}
         </div>
       </div>
-    </Segment>
+    </section>
   );
 };
 export default Carousel;

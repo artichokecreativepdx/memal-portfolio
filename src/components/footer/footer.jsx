@@ -1,19 +1,34 @@
-import { Icon } from 'semantic-ui-react';
 import Contact from '../contact/contact';
+import moth1 from './images/moth1_small.png';
+import moth2 from './images/moth2_small.png';
+import moth3 from './images/moth3_small.png';
 import './footer.css';
 function Footer() {
   return (
     <footer className="footer">
       <Contact />
+      <div className="mothBox">
+        <div className="moths1">
+          <img src={moth1} width="100" alt="moth1" />
+        </div>
+
+        <div className="moths2">
+          <img src={moth2} width="100" alt="moth" />
+        </div>
+
+        <div className="moths3">
+          <img src={moth3} width="100" alt="moth" />
+        </div>
+      </div>
       <div className="socialMedia">
         <a href="https://github.com/artichokecreativepdx" target="blank">
-          <Icon circular size="big" name="github" />
+          <ion-icon size="large" name="logo-github"></ion-icon>
         </a>
         <a href="https://www.instagram.com/dcartichoke/" target="blank">
-          <Icon circular size="big" name="instagram" />
+          <ion-icon size="large" name="logo-instagram"></ion-icon>
         </a>
         <a href="https://www.linkedin.com/in/meganmaldonado/" target="blank">
-          <Icon circular size="big" name="linkedin" />
+          <ion-icon size="large" name="logo-linkedin"></ion-icon>
         </a>
       </div>
 
