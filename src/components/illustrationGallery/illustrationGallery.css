@@ -1,0 +1,153 @@
+.section_title_illustration {
+  margin: 20px 0;
+  padding: 20px;
+  width: 100%;
+  line-height: 1.6;
+}
+
+.digital {
+  --s: 100px; /* control the size */
+  --g: 10px; /* control the gap */
+  display: grid;
+  margin: calc(var(--s) + var(--g));
+}
+.digital img {
+  grid-area: 1/1;
+  width: var(--s);
+  aspect-ratio: 1.15;
+  object-fit: cover;
+  clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0 50%);
+  transform: translate(var(--_x, 0), var(--_y, 0));
+}
+.digital > img:nth-child(1) {
+  --_y: calc(-100% - var(--g));
+}
+.digital > img:nth-child(7) {
+  --_y: calc(100% + var(--g));
+}
+.digital > img:nth-child(3),
+.digital > img:nth-child(5) {
+  --_x: calc(-75% - 0.87 * var(--g));
+}
+.digital > img:nth-child(4),
+.digital > img:nth-child(6) {
+  --_x: calc(75% + 0.87 * var(--g));
+}
+.digital > img:nth-child(3),
+.digital > img:nth-child(4) {
+  --_y: calc(-50% - 0.5 * var(--g));
+}
+.digital > img:nth-child(5),
+.digital > img:nth-child(6) {
+  --_y: calc(50% + 0.5 * var(--g));
+}
+.acrOil {
+  --s: 100px; /* control the size */
+  --g: 10px; /* control the gap */
+  display: grid;
+  margin: calc(var(--s) + var(--g));
+}
+.acrOil img {
+  grid-area: 1/1;
+  width: var(--s);
+  aspect-ratio: 1.15;
+  object-fit: cover;
+  clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0 50%);
+  transform: translate(var(--_x, 0), var(--_y, 0));
+}
+.acrOil > img:nth-child(1) {
+  --_y: calc(-100% - var(--g));
+}
+.acrOil > img:nth-child(7) {
+  --_y: calc(100% + var(--g));
+}
+.acrOil > img:nth-child(3),
+.acrOil > img:nth-child(5) {
+  --_x: calc(-75% - 0.87 * var(--g));
+}
+.acrOil > img:nth-child(4),
+.acrOil > img:nth-child(6) {
+  --_x: calc(75% + 0.87 * var(--g));
+}
+.acrOil > img:nth-child(3),
+.acrOil > img:nth-child(4) {
+  --_y: calc(-50% - 0.5 * var(--g));
+}
+.acrOil > img:nth-child(5),
+.acrOil > img:nth-child(6) {
+  --_y: calc(50% + 0.5 * var(--g));
+}
+@media only screen and (min-width: 760px) {
+  .digital {
+    --s: 200px; /* control the size */
+    --g: 10px; /* control the gap */
+    display: grid;
+    margin: calc(var(--s) + var(--g));
+  }
+  .digital img {
+    grid-area: 1/1;
+    width: var(--s);
+    aspect-ratio: 1.15;
+    object-fit: cover;
+    clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0 50%);
+    transform: translate(var(--_x, 0), var(--_y, 0));
+  }
+  .digital > img:nth-child(1) {
+    --_y: calc(-100% - var(--g));
+  }
+  .digital > img:nth-child(7) {
+    --_y: calc(100% + var(--g));
+  }
+  .digital > img:nth-child(3),
+  .digital > img:nth-child(5) {
+    --_x: calc(-75% - 0.87 * var(--g));
+  }
+  .digital > img:nth-child(4),
+  .digital > img:nth-child(6) {
+    --_x: calc(75% + 0.87 * var(--g));
+  }
+  .digital > img:nth-child(3),
+  .digital > img:nth-child(4) {
+    --_y: calc(-50% - 0.5 * var(--g));
+  }
+  .digital > img:nth-child(5),
+  .digital > img:nth-child(6) {
+    --_y: calc(50% + 0.5 * var(--g));
+  }
+  .acrOil {
+    --s: 200px; /* control the size */
+    --g: 10px; /* control the gap */
+    display: grid;
+    margin: calc(var(--s) + var(--g));
+  }
+  .acrOil img {
+    grid-area: 1/1;
+    width: var(--s);
+    aspect-ratio: 1.15;
+    object-fit: cover;
+    clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0 50%);
+    transform: translate(var(--_x, 0), var(--_y, 0));
+  }
+  .acrOil > img:nth-child(1) {
+    --_y: calc(-100% - var(--g));
+  }
+  .acrOil > img:nth-child(7) {
+    --_y: calc(100% + var(--g));
+  }
+  .acrOil > img:nth-child(3),
+  .acrOil > img:nth-child(5) {
+    --_x: calc(-75% - 0.87 * var(--g));
+  }
+  .acrOil > img:nth-child(4),
+  .acrOil > img:nth-child(6) {
+    --_x: calc(75% + 0.87 * var(--g));
+  }
+  .acrOil > img:nth-child(3),
+  .acrOil > img:nth-child(4) {
+    --_y: calc(-50% - 0.5 * var(--g));
+  }
+  .acrOil > img:nth-child(5),
+  .acrOil > img:nth-child(6) {
+    --_y: calc(50% + 0.5 * var(--g));
+  }
+}

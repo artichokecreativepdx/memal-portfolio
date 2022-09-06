@@ -1,23 +1,11 @@
-import { NavLink } from 'react-router-dom';
-
+import DesktopNav from './desktopNav';
+import MobileNav from './mobileNav';
+import './navigation.css';
 function Nav() {
   return (
     <div className="navMenu">
-      <NavLink to="/" name="home">
-        Home
-      </NavLink>
-
-      <NavLink to="./about" name="about">
-        About
-      </NavLink>
-
-      <NavLink to="./web" name="web">
-        web
-      </NavLink>
-
-      <NavLink to="./illustration" name="illustration">
-        Illustration
-      </NavLink>
+      <DesktopNav />
+      <MobileNav />
     </div>
   );
 }

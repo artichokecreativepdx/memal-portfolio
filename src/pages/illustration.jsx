@@ -1,13 +1,10 @@
-import '../components/illustration/imageSlider';
-
-import ImageSlider from '../components/illustration/imageSlider';
-
+// import ImageSlider from '../components/illustration/imageSlider';
+import IllustrationGallery from '../components/illustrationGallery/illustrationGallery.jsx';
 function Illustration() {
   return (
     <>
-      <div className="section_title_illustration">Illustration</div>
-
-      <ImageSlider />
+      <IllustrationGallery />
+      {/* <ImageSlider /> */}
     </>
   );
 }

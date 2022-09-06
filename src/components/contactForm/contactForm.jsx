@@ -2,7 +2,7 @@ import React, { useRef, useState } from 'react';
 
 import emailjs from '@emailjs/browser';
 
-export const Contact = () => {
+export const ContactForm = () => {
   const [status, setStatus] = useState('Submit');
   const form = useRef();
   const sendEmail = (e) => {
@@ -60,4 +60,4 @@ export const Contact = () => {
   );
 };
 
-export default Contact;
+export default ContactForm;

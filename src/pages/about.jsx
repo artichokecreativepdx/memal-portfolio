@@ -2,7 +2,7 @@ import AboutMe from '../components/about/about';
 
 function About() {
   return (
-    <div className="main">
+    <div className="about">
       <AboutMe />
     </div>
   );

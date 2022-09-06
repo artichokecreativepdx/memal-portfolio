@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 import logo from './images/my_logo.svg';
-import Nav from '../Navigation/navigation';
+import Nav from '../navigation/navigation';
 import './head.css';
 function Head() {
   return (

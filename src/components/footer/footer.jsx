@@ -1,4 +1,3 @@
-import Contact from '../contact/contact';
 import moth1 from './images/moth1_small.png';
 import moth2 from './images/moth2_small.png';
 import moth3 from './images/moth3_small.png';
@@ -6,7 +5,24 @@ import './footer.css';
 function Footer() {
   return (
     <footer className="footer">
-      <Contact />
+      <div className="socialMedia">
+        <a href="https://github.com/artichokecreativepdx" target="blank">
+          <ion-icon size="large" name="logo-github"></ion-icon>
+        </a>
+        <p>Github: artichokecreativepdx</p>
+        <a href="https://www.instagram.com/dcartichoke/" target="blank">
+          <ion-icon size="large" name="logo-instagram"></ion-icon>
+        </a>
+        <p>instagram: dcartichoke</p>
+        <a href="https://www.linkedin.com/in/meganmaldonado/" target="blank">
+          <ion-icon size="large" name="logo-linkedin"></ion-icon>
+        </a>
+        <p>LinkedIn: meganmaldonado</p>
+        <a href="mailto:megan@memaldesigns.com">
+          <ion-icon size="large" name="send"></ion-icon>
+        </a>
+        <p>E-Mail: megan@memaldesigns.com</p>
+      </div>
       <div className="mothBox">
         <div className="moths1">
           <img src={moth1} width="100" alt="moth1" />
@@ -20,19 +36,7 @@ function Footer() {
           <img src={moth3} width="100" alt="moth" />
         </div>
       </div>
-      <div className="socialMedia">
-        <a href="https://github.com/artichokecreativepdx" target="blank">
-          <ion-icon size="large" name="logo-github"></ion-icon>
-        </a>
-        <a href="https://www.instagram.com/dcartichoke/" target="blank">
-          <ion-icon size="large" name="logo-instagram"></ion-icon>
-        </a>
-        <a href="https://www.linkedin.com/in/meganmaldonado/" target="blank">
-          <ion-icon size="large" name="logo-linkedin"></ion-icon>
-        </a>
-      </div>
-
-      <p className="copyright">© Megan Maldonado 2018</p>
+      <p className="copyright">&copy; Megan Maldonado 2018</p>
     </footer>
   );
 }

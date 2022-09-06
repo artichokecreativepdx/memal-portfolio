@@ -32,19 +32,21 @@ const Carousel = ({ children }) => {
       <div className="carousel" {...handlers}>
         <div className="indicators">
           <button
+            className="butnArrow"
             onClick={() => {
               updateIndex(activeIndex - 1);
             }}
           >
-            <ion-icon name="arrow-back-circle-outline"></ion-icon>
+            <ion-icon name="arrow-back" size="large"></ion-icon>
           </button>
 
           <button
+            className="butnArrow"
             onClick={() => {
               updateIndex(activeIndex + 1);
             }}
           >
-            <ion-icon name="arrow-forward-circle-outline"></ion-icon>
+            <ion-icon name="arrow-forward" size="large"></ion-icon>
           </button>
         </div>
         <div

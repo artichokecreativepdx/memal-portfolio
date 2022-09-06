@@ -1,14 +1,61 @@
 :root {
-  --blu-blk: #363b3b;
-
-  --white: #fff;
+  --white: #fffdf4;
+  --primary: #77a194;
+  --secondary: #c6d9bcff;
+  --gray: #b1aea3ff;
+  --tertiary: #587c90ff;
+  --black: #3b2f30ff;
+}
+* {
+  border: 1px solid red;
 }
 body {
-  background: var(--blu-blk);
+  background: var(--white);
 }
-
+.container {
+  padding: 0;
+  width: 100%;
+  max-width: 100%;
+}
+section {
+  /* border: 1px solid red; */
+  width: 100%;
+}
+button {
+  background: var(--primary);
+  cursor: pointer;
+}
+button:hover {
+  background: var(--tertiary);
+}
+button .icon-large {
+  color: var(--white);
+}
+button .icon-large:hover {
+  color: var(--secondary);
+}
+a {
+  text-decoration: none;
+  color: var(--tertiary);
+  cursor: pointer;
+}
 h1,
 h2,
 h3 {
   font-family: 'Dosis', sans-serif;
+  color: var(--black);
+}
+p,
+li {
+  font-family: 'Raleway', sans-serif;
+  color: var(--black);
+}
+
+@media only screen and (min-width: 760px) {
+  .container {
+    width: 100%;
+  }
+  section {
+    width: 100%;
+  }
 }
