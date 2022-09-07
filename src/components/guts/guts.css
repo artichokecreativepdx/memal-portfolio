@@ -1,6 +1,17 @@
 .intro {
-  padding-left: 20px;
+  padding: 0 20px;
+  display: grid;
+  grid-template-columns: 1fr;
+  align-items: flex-end;
 }
+
 .selfieImg {
   margin-bottom: -20px;
+}
+@media only screen and (min-width: 760px) {
+  .intro {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: flex-end;
+  }
 }

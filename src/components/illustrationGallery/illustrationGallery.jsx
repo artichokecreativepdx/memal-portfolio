@@ -18,7 +18,7 @@ function IllustrationGallery() {
   return (
     <section>
       <div className="section_title_illustration">
-        <h1>Illustration</h1>
+        <h2>Digital Illustration</h2>
         <div className="illusBox">
           <div className="digital">
             <img src={lantern} className="images" alt="lantern bug" />

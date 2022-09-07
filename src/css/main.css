@@ -6,9 +6,9 @@
   --tertiary: #587c90ff;
   --black: #3b2f30ff;
 }
-* {
+/* * {
   border: 1px solid red;
-}
+} */
 body {
   background: var(--white);
 }

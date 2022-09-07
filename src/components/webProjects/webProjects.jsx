@@ -10,7 +10,7 @@ function WebProjects() {
   return (
     <section>
       <div className="section_title_web">
-        <h1>Web Development</h1>
+        <h2>Web Development</h2>
       </div>
       <div className="card">
         <img
