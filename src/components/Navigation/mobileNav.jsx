@@ -18,6 +18,9 @@ function MobileNav() {
       <NavLink to="./illustration" name="illustration">
         Illustration
       </NavLink>
+      {/* <NavLink to="./campApp" name="Camping">
+        Camping App
+      </NavLink> */}
 
       {/* <NavLink to="./contact" name="contact">
         Contact
