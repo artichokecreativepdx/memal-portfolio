@@ -1,8 +1,7 @@
 .intro {
-  padding: 0 20px;
   display: grid;
   grid-template-columns: 1fr;
-  align-items: flex-end;
+  height: 60vh;
 }
 
 .selfieImg {

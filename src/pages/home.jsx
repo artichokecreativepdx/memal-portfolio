@@ -1,11 +1,14 @@
+import { useNav } from '../customHooks/useNav';
+
 import Guts from '../components/guts/guts';
-import ProjectGallery from '../components/project links/projectLinks';
-function Home() {
+const Home = () => {
+  const homeRef = useNav('Home');
+
   return (
-    <section className="main">
+    <section ref={homeRef} id="homeContainer">
       <Guts />
-      <ProjectGallery />
     </section>
   );
-}
+};
+
 export default Home;

@@ -3,8 +3,10 @@
   height: 100vh;
   display: grid;
   grid-template-columns: 1fr 1fr;
-
+  justify-items: center;
+  align-items: center;
   padding: 20px;
+  width: 100%;
 }
 .form {
   padding: 10px;
@@ -14,7 +16,7 @@
   color: var(--tertiary);
   margin: 0 1rem;
   transition: transform 250ms;
-  display: inline-block;
+  padding: 20px;
 }
 .socialMedia a:hover {
   transform: translateY(-2px);

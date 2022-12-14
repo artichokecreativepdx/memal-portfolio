@@ -9,19 +9,18 @@ function Footer() {
         <a href="https://github.com/artichokecreativepdx" target="blank">
           <ion-icon size="large" name="logo-github"></ion-icon>
         </a>
-        <p>Github: artichokecreativepdx</p>
+
         <a href="https://www.instagram.com/dcartichoke/" target="blank">
           <ion-icon size="large" name="logo-instagram"></ion-icon>
         </a>
-        <p>instagram: dcartichoke</p>
+
         <a href="https://www.linkedin.com/in/meganmaldonado/" target="blank">
           <ion-icon size="large" name="logo-linkedin"></ion-icon>
         </a>
-        <p>LinkedIn: meganmaldonado</p>
+
         <a href="mailto:megan@memaldesigns.com">
           <ion-icon size="large" name="send"></ion-icon>
         </a>
-        <p>E-Mail: megan@memaldesigns.com</p>
       </div>
       <div className="mothBox">
         <div className="moths1">

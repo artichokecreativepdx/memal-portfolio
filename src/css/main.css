@@ -13,13 +13,14 @@ body {
   background: var(--white);
 }
 .container {
-  padding: 0;
-  width: 100%;
   max-width: 100%;
+  padding: 0;
 }
+
 section {
-  /* border: 1px solid red; */
+  margin: auto;
   width: 100%;
+  min-height: 90vh;
 }
 button {
   background: var(--primary);
@@ -35,6 +36,9 @@ button .icon-large:hover {
   color: var(--secondary);
 }
 a {
+  font-family: 'Poiret One', cursive;
+  font-size: 1.3em;
+
   text-decoration: none;
   color: var(--tertiary);
   cursor: pointer;
@@ -42,16 +46,20 @@ a {
 h1,
 h2,
 h3 {
-  font-family: 'Dosis', sans-serif;
+  /* font-family: 'Dosis', sans-serif; */
+  font-family: 'Poiret One', cursive;
   color: var(--black);
 }
 p,
 li {
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Dosis', sans-serif;
   color: var(--black);
 }
 
 @media only screen and (min-width: 760px) {
+  a {
+    font-size: 1.5em;
+  }
   .container {
     width: 100%;
   }

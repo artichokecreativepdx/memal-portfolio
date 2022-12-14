@@ -1,11 +1,13 @@
-// import ImageSlider from '../components/illustration/imageSlider';
-import IllustrationGallery from '../components/illustrationGallery/illustrationGallery.jsx';
-function Illustration() {
+import { useNav } from '../customHooks/useNav';
+import IllustrationGallery from '../components/illustrationGallery/illustrationGallery';
+const Illustration = () => {
+  const illustrationRef = useNav('Illustration');
+
   return (
-    <div className="illustration">
+    <section ref={illustrationRef} id="illustrationContainer">
       <IllustrationGallery />
-      {/* <ImageSlider /> */}
-    </div>
+    </section>
   );
-}
+};
+
 export default Illustration;

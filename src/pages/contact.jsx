@@ -1,9 +1,11 @@
-import ContctForm from '../components/contactForm/contactForm';
+import { useNav } from '../customHooks/useNav';
+import ContactForm from '../components/contactForm/contactForm';
+const Contact = () => {
+  const contactRef = useNav('Contact');
 
-export const Contact = () => {
   return (
-    <section>
-      <ContctForm />
+    <section ref={contactRef} id="contactContainer">
+      <ContactForm />
     </section>
   );
 };

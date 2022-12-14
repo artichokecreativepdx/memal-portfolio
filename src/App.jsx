@@ -1,17 +1,18 @@
 import React from 'react';
-import { BrowserRouter as Router } from 'react-router-dom';
-import Head from './components/head/head';
+import { Nav } from './nav';
+import { Main } from './pages';
+import Header from './components/head/header';
 import Footer from './components/footer/footer';
-import RoutePath from './routes';
-
+import NavProvider from './context/NavContext';
 export default function App() {
   return (
     <div className="container">
-      <Router>
-        <Head />
-        <RoutePath />
+      <NavProvider>
+        <Nav />
+        <Header />
+        <Main />
         <Footer />
-      </Router>
+      </NavProvider>
     </div>
   );
 }

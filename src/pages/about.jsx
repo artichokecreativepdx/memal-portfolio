@@ -1,10 +1,13 @@
-import AboutMe from '../components/about/about';
+import { useNav } from '../customHooks/useNav';
+import AboutMe from '../components/about/aboutMe';
+const About = () => {
+  const aboutRef = useNav('About');
 
-function About() {
   return (
-    <div className="about">
+    <section ref={aboutRef} id="aboutContainer">
       <AboutMe />
-    </div>
+    </section>
   );
-}
+};
+
 export default About;
