@@ -1,12 +1,12 @@
-import { Home, About, Illustration, Web } from '.';
+import { Home, About, Web } from '.';
 
 const Main = () => (
-  <main>
+  <main className="container">
     <Home />
     <About />
     <Web />
     {/* <Design /> */}
-    <Illustration />
+    {/* <Illustration /> */}
   </main>
 );
 

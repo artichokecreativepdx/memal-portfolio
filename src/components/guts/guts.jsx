@@ -1,17 +1,14 @@
-import selfie from './self_new.png';
 import './guts.css';
+import Selfie from './selfie_2.png';
 function Guts() {
   return (
     <div className="intro">
+      <img src={Selfie} alt="self portrait intro" height={300} />
       <div className="introBox">
-        <h2 className="developer">Developer</h2>
-        <h2 className="designer">Designer</h2>
-        <h2 className="illustrator">Illustrator</h2>
-        <h5 className="location">Out of Portland, Oregon</h5>
-      </div>
-
-      <div className="selfieBox">
-        <img src={selfie} width="300" className="selfieImg" alt="me" />
+        <h4>
+          My name is Megan Maldonado and I am a Creative Developer out of
+          Portland, Oregon
+        </h4>
       </div>
     </div>
   );

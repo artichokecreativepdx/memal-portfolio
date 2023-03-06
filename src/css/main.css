@@ -1,9 +1,9 @@
 :root {
   --white: #fffdf4;
-  --primary: #77a194;
-  --secondary: #c6d9bcff;
-  --gray: #b1aea3ff;
-  --tertiary: #587c90ff;
+  --primary: #e16606;
+  --secondary: #35b4c0;
+  --brown: #46260f;
+  --tertiary: #b02b10;
   --black: #3b2f30ff;
 }
 /* * {
@@ -14,7 +14,6 @@ body {
 }
 .container {
   max-width: 100%;
-  padding: 0;
 }
 
 section {
@@ -36,9 +35,8 @@ button .icon-large:hover {
   color: var(--secondary);
 }
 a {
-  font-family: 'Poiret One', cursive;
+  font-family: 'Urbanist', sans-serif;
   font-size: 1.3em;
-
   text-decoration: none;
   color: var(--tertiary);
   cursor: pointer;
@@ -47,12 +45,12 @@ h1,
 h2,
 h3 {
   /* font-family: 'Dosis', sans-serif; */
-  font-family: 'Poiret One', cursive;
+  font-family: 'Urbanist', sans-serif;
   color: var(--black);
 }
 p,
 li {
-  font-family: 'Dosis', sans-serif;
+  font-family: 'Figtree', sans-serif;
   color: var(--black);
 }
 
@@ -62,6 +60,7 @@ li {
   }
   .container {
     width: 100%;
+    padding: 0;
   }
   section {
     width: 70%;

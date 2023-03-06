@@ -1,6 +1,5 @@
 .footer {
-  background: var(--gray);
-  height: 100vh;
+  background: var(--brown);
   display: grid;
   grid-template-columns: 1fr 1fr;
   justify-items: center;

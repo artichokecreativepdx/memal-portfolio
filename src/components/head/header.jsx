@@ -1,4 +1,4 @@
-import logo from './images/my_logo.svg';
+import logo from './images/my_logo2022.svg';
 
 import './head.css';
 function Header() {

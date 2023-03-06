@@ -21,6 +21,7 @@ function WebProjects() {
           width="200"
         />
         <div className="info">
+          <h3>Details</h3>
           <p>
             Group project with the direction of Propel Projects creating MVP App
             to be showcased at the end of 8 weeks. Worked with Project manager,
@@ -29,6 +30,7 @@ function WebProjects() {
             create an app that suggests various travel destination based on a
             series of questions presented to the user.
           </p>
+          <h3>Challenges</h3>
           <p>
             Learning Git and version control to work in tandem with the back-end
             developer. Coordinating with UX/UI person to establish visual
@@ -54,12 +56,14 @@ function WebProjects() {
           width="200"
         />
         <div className="info">
+          <h3>Details</h3>
           <p>
             Working with client to capture look and feel of cafe within the
             site, update cafe menu, add images, write product description, and
-            create working contact page. Ensuring that the site was mobile first
+            create working contact page, ensuring that the site was mobile first
             design.
           </p>
+          <h3>Challenges</h3>
           <p>
             Working with foundation framework to create a clean, functional,
             mobile first website. Worked with owner to purchase the domain name
@@ -80,11 +84,14 @@ function WebProjects() {
           width="200"
         />
         <div className="info">
+          <h3>Details</h3>
           <p>
             Worked with 501(c)(3), that provides shelter pets with homes,
-            establishing, designing, and maintaining the website. Communicated
-            with leadership regarding content and design of website.
+            establishing, designing, and maintaining the website, and
+            communicating with leadership regarding content and design of
+            website.
           </p>
+          <h3>Challenges</h3>
           <p>
             Challenges for the project involved working within the Rescue Groups
             established CMS framework with limited access to core files.
