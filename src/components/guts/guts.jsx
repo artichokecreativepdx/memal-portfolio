@@ -5,10 +5,8 @@ function Guts() {
     <div className="intro">
       <img src={Selfie} alt="self portrait intro" height={300} />
       <div className="introBox">
-        <h4>
-          My name is Megan Maldonado and I am a Creative Developer out of
-          Portland, Oregon
-        </h4>
+        <h1>Hi, my name is Megan</h1>
+        <h3>I create unique, user-friendly websites.</h3>
       </div>
     </div>
   );
