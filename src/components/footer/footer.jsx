@@ -1,6 +1,7 @@
 import moth1 from './images/moth1_small.png';
 import moth2 from './images/moth2_small.png';
 import moth3 from './images/moth3_small.png';
+
 import './footer.css';
 function Footer() {
   return (
@@ -35,7 +36,7 @@ function Footer() {
           <img src={moth3} width="100" alt="moth" />
         </div>
       </div>
-      <p className="copyright">&copy; Megan Maldonado 2018</p>
+      <p className="copyright">&copy; Megan Maldonado 2023</p>
     </footer>
   );
 }

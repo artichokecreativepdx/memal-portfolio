@@ -1,10 +1,11 @@
-import { Home, About, Web } from '.';
+import { Home, About, Web, Contact } from '../..';
 
 const Main = () => (
   <main className="container">
     <Home />
     <About />
     <Web />
+    <Contact />
     {/* <Design /> */}
     {/* <Illustration /> */}
   </main>

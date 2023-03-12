@@ -35,3 +35,17 @@ nav span.activeClass i {
 nav span.activeClass {
   border-bottom-color: var(--secondary);
 }
+@media only screen and (min-width: 760px) {
+  nav {
+    z-index: 10;
+    background: var(--brown);
+    color: var(--white);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 20px 0;
+    position: fixed;
+    top: 0px;
+    right: 0px;
+  }
+}
