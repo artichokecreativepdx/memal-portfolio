@@ -1,4 +1,4 @@
-import { Home, About, Web, Contact } from '../..';
+import { Home, About, Web, Contact } from '.';
 
 const Main = () => (
   <main className="container">
