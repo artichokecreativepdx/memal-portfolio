@@ -21,8 +21,6 @@
   transform: translateY(-2px);
   color: var(--secondary);
 }
-.copyright {
-  color: var(--primary);
-}
+
 @media only screen and (min-width: 760px) {
 }

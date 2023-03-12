@@ -5,9 +5,9 @@ import Resume from '../resume/MeganMaldonadoResume2022.pdf';
 function AboutMe() {
   return (
     <section>
-      <div className="about_section">
+      <div className="card">
         <div className="selfLantern">
-          <img src={Lantern} alt="selfie" height={300} />
+          <img src={Lantern} alt="selfie" height={200} />
         </div>
         <div className="aboutMe">
           <p>
@@ -51,7 +51,7 @@ function AboutMe() {
             interested in working together or have any questions, feel free to
             get in touch!
           </p>
-          <button className="btn">
+          <button>
             <a href={Resume} target="_blank" rel="noreferrer">
               Resum&eacute;
             </a>
