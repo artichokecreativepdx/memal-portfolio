@@ -5,6 +5,10 @@
   justify-items: center;
   align-items: center;
   padding: 20px;
+  width: 100%;
+}
+.form {
+  padding: 10px;
 }
 
 .socialMedia a {
