@@ -1,17 +1,23 @@
-nav {
-  z-index: 10;
-  /* background: var(--primary); */
-  color: var(--black);
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  padding: 10px 0;
+.desktop {
+  visibility: hidden;
+}
+.mobile {
+  font-size: 0.8em;
+  width: 100%;
+  visibility: unset;
   position: fixed;
-  bottom: 2px;
-  right: 0;
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: row;
+  z-index: 20;
+  bottom: 4px;
+  background: var(--black);
+  color: var(--white);
+}
+nav {
+  font-size: 1.2em;
 }
 nav span {
-  font-size: 18px;
   border-bottom: 1px solid transparent;
   transition: border-bottom 0.2s ease;
   transition-delay: 0.25s;
@@ -36,8 +42,10 @@ nav span.activeClass {
   border-bottom-color: var(--secondary);
 }
 @media only screen and (min-width: 760px) {
-  nav {
+  .desktop {
+    visibility: unset;
     z-index: 10;
+    height: 100vh;
     background: var(--brown);
     color: var(--white);
     display: flex;
@@ -47,5 +55,8 @@ nav span.activeClass {
     position: fixed;
     top: 0px;
     right: 0px;
+  }
+  .mobile {
+    visibility: hidden;
   }
 }

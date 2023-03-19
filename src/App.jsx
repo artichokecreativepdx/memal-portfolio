@@ -6,13 +6,13 @@ import Footer from './components/footer/footer';
 import NavProvider from './context/NavContext';
 export default function App() {
   return (
-    <>
+    <div>
       <NavProvider>
-        <Nav />
         <Header />
+        <Nav />
         <Main />
         <Footer />
       </NavProvider>
-    </>
+    </div>
   );
 }
