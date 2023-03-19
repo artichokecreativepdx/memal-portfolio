@@ -7,9 +7,16 @@ import './Nav.css';
 const Nav = () => {
   return (
     <nav>
-      {navLinks.map(({ navLinkId, scrollToId }, idx) => (
-        <NavLink key={idx} navLinkId={navLinkId} scrollToId={scrollToId} />
-      ))}
+      <div className="mobile">
+        {navLinks.map(({ navLinkId, scrollToId }, idx) => (
+          <NavLink key={idx} navLinkId={navLinkId} scrollToId={scrollToId} />
+        ))}
+      </div>
+      <div className="desktop">
+        {navLinks.map(({ navLinkId, scrollToId }, idx) => (
+          <NavLink key={idx} navLinkId={navLinkId} scrollToId={scrollToId} />
+        ))}
+      </div>
     </nav>
   );
 };
